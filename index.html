@@ -1,18 +1,159 @@
 <html>
-    <title>Ordem de Serviço</title>
-    <style>
-        .box{
-            width: 800px;
-            height: 1000px;
-            padding-left: 50px;
-            border: solid rgb(0, 0, 0);
-        }
-    </style>
-    <head>
-        
-    </head>
-    <body class="box">
-        <h1>Ordem de Serviço</h1>
-        
-    </body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ordem de Serviço</title>
+<style>
+    .box {
+        margin: auto;
+        width: 800px;
+        height: 1000px;
+        padding-top: 20px;
+        padding-left: 30px;
+        border: solid rgba(139, 139, 139, 0.404);
+        border-radius: 2%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    b {
+        font-size: xx-large;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    .column {
+        float: left;
+        width: 185px;
+    }
+
+    .columnEstado {
+        float: left;
+        padding-left: 160px;
+        width: 230px;
+    }
+
+    .columnCEP {
+        float: left;
+        padding-left: 30px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .caixaTexto0 {
+        width: 165px;
+        height: 40px;
+        border-radius: 5px;
+        border: solid rgb(139, 139, 139);
+    }
+
+    .caixaTexto1 {
+        width: 585px;
+        height: 40px;
+        border-radius: 5px;
+        border: solid rgb(139, 139, 139);
+    }
+
+    .caixaTexto2 {
+        width: 770px;
+        height: 40px;
+        border-radius: 5px;
+        border: solid rgb(139, 139, 139);
+
+    }
+
+    .caixaTextoCidade {
+        width: 320px;
+        height: 40px;
+        border-radius: 5px;
+        border: solid rgb(139, 139, 139);
+    }
+
+    .caixaTextoEstado {
+        width: 235px;
+        height: 40px;
+        border-radius: 5px;
+        border: solid rgb(139, 139, 139);
+    }
+</style>
+
+
+<head>
+    <b>Ordem de Serviço</b>
+</head>
+
+<body class="box">
+    <div>
+        <h2>Nº da O.S:</h2>
+        <input type="text" name="Nº O.S" class="caixaTexto0" />
+    </div>
+    <div>
+        <h2>Nome do Prestador de Serviço:</h2>
+        <input type="text" name="Nome" class="caixaTexto2" />
+    </div>
+    <div>
+        <h2>Endereço:</h2>
+        <input type="text" name="Endereço" class="caixaTexto2" />
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2>Número:</h2>
+            <input type="text" name="Número" class="caixaTexto0" />
+        </div>
+        <div class="column">
+            <h2>Bairro:</h2>
+            <input type="text" name="BAirro" class="caixaTexto1" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2>Cidade:</h2>
+            <input type="text" name="Número" class="caixaTextoCidade" />
+        </div>
+        <div class="columnEstado">
+            <h2>Estado:</h2>
+            <select type="text" name="Estado" id="estado" name="estado" class="caixaTextoEstado"
+                style="font-size: medium;">
+                <option value="Selecione">Selecione o Estado...</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+        <div class="columnCEP">
+            <h2>CEP:</h2>
+            <input type="text" name="Número" class="caixaTexto0" />
+        </div>
+    </div>
+
+</body>
+
 </html>
