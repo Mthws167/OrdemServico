@@ -113,8 +113,32 @@ h2 {
 
 .Caixa-Texto-Estado {
     width: 235px;
-    height: 40px;
+    height: 48px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
 }
+
+.Caixa-Texto-Observacao {
+    width: 770px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+
+}
+
+.Caixa-Texto-Descricao {
+    width: 770px;
+    height: 100px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+
+}
+.Caixa-Texto-Servico {
+    width: 770px;
+    height: 100px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+
+}
+
 
