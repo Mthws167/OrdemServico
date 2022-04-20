@@ -1,10 +1,9 @@
 .box {
     margin: auto;
     width: 800px;
-    height: 2000px;
     padding-top: 20px;
     padding-left: 30px;
-    border: solid rgba(139, 139, 139, 0.404);
+    border: solid rgba(39, 39, 39, 0.596);
     border-radius: 2%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -43,6 +42,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
+    font-size: 17px;
 }
 
 .Caixa-Texto-Numero-Casa{
@@ -50,6 +50,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
+    font-size: 17px;
 }
 
 .Caixa-Texto-CEP{
@@ -57,6 +58,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
+    font-size: 17px;
 }
 
 .Caixa-Texto-Bairro {
@@ -64,6 +66,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
+    font-size: 17px;
 }
 
 .Caixa-Texto-Nome-Prestador {
@@ -71,7 +74,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
-
+    font-size: 17px;
 }
 
 .Caixa-Texto-Endereco {
@@ -79,7 +82,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
-
+    font-size: 17px;
 }
 
 .Caixa-Texto-Cliente {
@@ -87,7 +90,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
-
+    font-size: 17px;
 }
 
 .Caixa-Texto-Cidade {
@@ -95,6 +98,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
+    font-size: 17px;
 }
 
 .Caixa-Texto-Telefone {
@@ -102,6 +106,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
+    font-size: 17px;
 }
 
 .Caixa-Texto-CPF-CNPJ {
@@ -109,6 +114,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
+    font-size: 17px;
 }
 
 .Caixa-Texto-Estado {
@@ -116,6 +122,7 @@ h2 {
     height: 48px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
+    font-size: 17px;
 }
 
 .Caixa-Texto-Observacao {
@@ -123,7 +130,7 @@ h2 {
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
-
+    font-size: 17px;
 }
 
 .Caixa-Texto-Descricao {
@@ -131,14 +138,29 @@ h2 {
     height: 100px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
-
+    font-size: 17px;
 }
 .Caixa-Texto-Servico {
     width: 770px;
     height: 100px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
+    font-size: 17px;
+}
 
+.Caixa-Data{
+    width: 165px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+    font-size: 17px;
+}
+.Caixa-Hora {
+    width: 165px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+    font-size: 17px;
 }
 
 
