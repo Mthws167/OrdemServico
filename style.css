@@ -38,22 +38,35 @@ h2 {
     display: table;
     clear: both;
 }
-
-.caixaTexto0 {
+.Caixa-Texto-N-OS{
     width: 165px;
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
 }
 
-.caixaTexto1 {
+.Caixa-Texto-Numero-Casa{
+    width: 165px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+}
+
+.Caixa-Texto-CEP{
+    width: 165px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+}
+
+.Caixa-Texto-Bairro {
     width: 585px;
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
 }
 
-.caixaTexto2 {
+.Caixa-Texto-Nome-Prestador {
     width: 770px;
     height: 40px;
     border-radius: 5px;
@@ -61,16 +74,47 @@ h2 {
 
 }
 
-.caixaTextoCidade {
+.Caixa-Texto-Endereco {
+    width: 770px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+
+}
+
+.Caixa-Texto-Cliente {
+    width: 770px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+
+}
+
+.Caixa-Texto-Cidade {
     width: 320px;
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
 }
 
-.caixaTextoEstado {
+.Caixa-Texto-Telefone {
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+}
+
+.Caixa-Texto-CPF-CNPJ {
+    width: 7px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid rgb(139, 139, 139);
+}
+
+.Caixa-Texto-Estado {
     width: 235px;
     height: 40px;
     border-radius: 5px;
     border: solid rgb(139, 139, 139);
 }
+
