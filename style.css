@@ -12,8 +12,14 @@ b {
     font-size: xx-large;
 }
 
+
 h2 {
     font-size: medium;
+}
+
+.b{
+    font-size: 20px;
+    color: rgb(243, 243, 243);
 }
 
 .column {
@@ -163,4 +169,11 @@ h2 {
     font-size: 17px;
 }
 
+.Botao-GerarOS{
+    width: 175px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+}
 
