@@ -3,10 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ordem de Serviço</title>
+
 <link rel="stylesheet" href="style.css" />
 
 <head>
     <b>Ordem de Serviço</b>
+    <script src="https://kit.fontawesome.com/5c632ebf55.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="box">
@@ -73,14 +75,13 @@
         </div>
         <div class="columnCEP">
             <h2>CEP:</h2>
-            <input type="text" name="CEP" class="Caixa-Texto-CEP" placeholder="00000-000"  />
+            <input type="text" name="CEP" class="Caixa-Texto-CEP" placeholder="00000-000" />
         </div>
     </div>
     <div class="row">
         <div class="column">
             <h2>Telefone (opicional):</h2>
-            <input type="text" name="Telefone" class="Caixa-Texto-Telefone"
-                style="margin: auto;" />
+            <input type="text" name="Telefone" class="Caixa-Texto-Telefone" style="margin: auto;" />
         </div>
         <div class="columnEstado">
             <h2>CPF ou CNPJ:</h2>
@@ -100,7 +101,7 @@
     <div class="row">
         <div class="column">
             <h2>Telefone (opcional):</h2>
-            <input type="text" name="Telefone" class="Caixa-Texto-Telefone"style="margin: auto;" />
+            <input type="text" name="Telefone" class="Caixa-Texto-Telefone" style="margin: auto;" />
         </div>
         <div class="columnEstado">
             <h2>CPF ou CNPJ(opicional):</h2>
@@ -114,23 +115,32 @@
     </div>
     <div>
         <h2>Descrição do Serviço:</h2>
-        <textarea name="Serviço" id="" cols="30" rows="10" placeholder= "Descreva o problema relatado ou o serviço que será realizado" class="Caixa-Texto-Descricao" ></textarea>
+        <textarea name="Serviço" id="" cols="30" rows="10"
+            placeholder="Descreva o problema relatado ou o serviço que será realizado"
+            class="Caixa-Texto-Descricao"></textarea>
     </div>
     <div>
         <h2>Serviço Executado:</h2>
-        <textarea name="" id="" cols="30" rows="10"  placeholder= "Descreva o serviço que será realizado" class="Caixa-Texto-Servico" ></textarea>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Descreva o serviço que será realizado"
+            class="Caixa-Texto-Servico"></textarea>
     </div>
     <div class="row">
         <div class="column">
             <h2>Data:</h2>
             <input type="date" class="Caixa-Data">
         </div>
-       
+
         <div class="column">
             <h2>Hora:</h2>
             <input type="time" class="Caixa-Hora">
+            <sub>Somente os números</sub>
         </div>
     </div>
+    <div>
+        <button type="submit" class="Botao-GerarOS"><i class="fa-solid fa-check" style=" color: rgb(243, 243, 243);"></i><b class="b"> Gerar
+                O.S</b></button>
+    </div>
+    <br>
     
 </body>
 
