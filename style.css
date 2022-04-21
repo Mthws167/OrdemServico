@@ -3,9 +3,11 @@
     width: 800px;
     padding-top: 20px;
     padding-left: 30px;
-    border: solid rgba(39, 39, 39, 0.596);
+    border: solid rgba(0, 0, 0, 0.829);
     border-radius: 2%;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/imagemFundo.jpg) ; 
+    background-size:100%;
 }
 
 b {
@@ -47,7 +49,7 @@ h2 {
     width: 165px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgba(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -55,7 +57,7 @@ h2 {
     width: 165px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -63,7 +65,7 @@ h2 {
     width: 165px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -71,7 +73,7 @@ h2 {
     width: 585px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -79,7 +81,7 @@ h2 {
     width: 770px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -87,7 +89,7 @@ h2 {
     width: 770px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -95,7 +97,7 @@ h2 {
     width: 770px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -103,7 +105,7 @@ h2 {
     width: 320px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -111,7 +113,7 @@ h2 {
     width: 320px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -119,15 +121,15 @@ h2 {
     width: 7px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
 .Caixa-Texto-Estado {
-    width: 235px;
+    width: 245px;
     height: 48px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -135,7 +137,7 @@ h2 {
     width: 770px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -143,14 +145,14 @@ h2 {
     width: 770px;
     height: 100px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 .Caixa-Texto-Servico {
     width: 770px;
     height: 100px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
@@ -158,14 +160,14 @@ h2 {
     width: 165px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 .Caixa-Hora {
     width: 165px;
     height: 40px;
     border-radius: 5px;
-    border: solid rgb(139, 139, 139);
+    border: solid rgb(27, 27, 27, 0.836);
     font-size: 17px;
 }
 
