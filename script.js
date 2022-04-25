@@ -1,29 +1,29 @@
 function numeroOS(evt) {
     var evento = evt || window.event;
     var chave = evento.keyCode || evento.which;
-    chave = String.fromCharCode( chave );
+    chave = String.fromCharCode(chave);
     var regex = /^[0-9.,]+$/;
     var regex = /^[0-9.]+$/;
-    if( !regex.test(chave) ) {
-       evento.returnValue = false;
-       if(evento.preventDefault) evento.preventDefault();
+    if (!regex.test(chave)) {
+        evento.returnValue = false;
+        if (evento.preventDefault) evento.preventDefault();
     }
- }
+}
 
- function numeroCasa(evt) {
+function numeroCasa(evt) {
     var evento = evt || window.event;
     var chave = evento.keyCode || evento.which;
-    chave = String.fromCharCode( chave );
+    chave = String.fromCharCode(chave);
     var regex = /^[0-9.,]+$/;
     var regex = /^[0-9.]+$/;
-    if( !regex.test(chave) ) {
-       evento.returnValue = false;
-       if(evento.preventDefault) evento.preventDefault();
+    if (!regex.test(chave)) {
+        evento.returnValue = false;
+        if (evento.preventDefault) evento.preventDefault();
     }
- }
+}
 
 
-function Formulario(){
+function Formulario() {
     var NOS = document.getElementById('NOS').innerHTML = NOS;
     var Nome = document.getElementById('nome');
     var Endereco = document.getElementById('endereco');
@@ -39,50 +39,18 @@ function Formulario(){
     var Data = document.getElementById('data');
     var Hora = document.getElementById('hora');
 
-    if(!NOS==null){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!Nome.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!Endereco.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!NumeroCasa.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!Bairro.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!Cidade.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!Estado.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!CEP.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!CPFCNPJ.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!Cliente.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!Descricao.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!Servico.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!Data.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else if(!Hora.checked){
-        alert('Campo Obrigatório!');
-        return false;
-    }else{
-        return true;
-    }
+}
 
+
+function gohome() {
+    window.location = 'index.html';
+}
+function save() {
+    window.localStorage.setItem('campo1', $('#campo1').val());
+}
+function load() {
+    $('#campo2').val(window.localStorage.getItem('campo1'));
+}
+function erase() {
+    window.localStorage.removeItem('campo1');
 }
