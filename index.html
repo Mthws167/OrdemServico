@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Ordem de Serviço</title>
 
 <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="index2.html">
+
 
 <head>
     <b>Ordem de Serviço</b>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/5c632ebf55.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+
 </head>
 
+
 <body class="box">
+
     <div>
         <h2>Nº da O.S:</h2>
-        <input type="text" name="Nº O.S" class="Caixa-Texto-N-OS" />
+        <input type="text" name="Nº O.S" id="NOS" class="Caixa-Texto-N-OS" onkeypress='numeroOS();' />
     </div>
     <div>
         <h2>Nome do Prestador de Serviço:</h2>
-        <input type="text" name="Nome" class="Caixa-Texto-Nome-Prestador" />
+        <input type="text" name="Nome" id="nome" class="Caixa-Texto-Nome-Prestador" />
     </div>
     <div>
         <h2>Endereço:</h2>
-        <input type="text" name="Endereço" class="Caixa-Texto-Endereco" />
+        <input type="text" name="Endereço" id="endereco" class="Caixa-Texto-Endereco" />
     </div>
     <div class="row">
         <div class="column">
             <h2>Número:</h2>
-            <input type="text" name="Número" class="Caixa-Texto-Numero-Casa" />
+            <input type="text" name="Número" id="numero" class="Caixa-Texto-Numero-Casa" onkeypress='numeroCasa();' />
         </div>
         <div class="column">
             <h2>Bairro:</h2>
-            <input type="text" name="Bairro" class="Caixa-Texto-Bairro" />
+            <input type="text" name="Bairro" id="bairro" class="Caixa-Texto-Bairro" />
         </div>
     </div>
     <div class="row">
         <div class="column">
             <h2>Cidade:</h2>
-            <input type="text" name="Número" class="Caixa-Texto-Cidade" />
+            <input type="text" name="Cidade" id="cidade" class="Caixa-Texto-Cidade" />
         </div>
         <div class="columnEstado">
             <h2>Estado:</h2>
@@ -75,17 +85,20 @@
         </div>
         <div class="columnCEP">
             <h2>CEP:</h2>
-            <input type="text" name="CEP" class="Caixa-Texto-CEP" placeholder="00000-000" />
+            <input type="text" name="CEP" id="cep" class="Caixa-Texto-CEP" placeholder="00000-000" size="10"
+                maxlength="9" onkeypress="$(this).mask('00000-000')" />
         </div>
     </div>
     <div class="row">
         <div class="column">
             <h2>Telefone (opicional):</h2>
-            <input type="text" name="Telefone" class="Caixa-Texto-Telefone" style="margin: auto;" />
+            <input type="text" name="Telefone" id="telefone" class="Caixa-Texto-Telefone" placeholder="(DDD)0000-0000"
+                style="margin: auto;" onkeypress="$(this).mask('(00)00000-0000')" />
         </div>
-        <div class="columnEstado">
+        <div class="columnCpfCnpj">
             <h2>CPF ou CNPJ:</h2>
-            <input type="text" name="CpfCnpj" class="Caixa-Texto-CPF-CNPJ" style=" padding-left: 420px;" />
+            <input type="text" name="CpfCnpj" id="CpfCnpj" class="Caixa-Texto-CPF-CNPJ1"
+                onkeypress="$(this).mask((length <= 12) ? '000.000.000-00' : '00.000.000/0000-00')" />
             <sub>Somente os números</sub>
         </div>
     </div>
@@ -96,53 +109,59 @@
     </head>
     <div>
         <h2>Cliente:</h2>
-        <input type="text" name="Nome" class="Caixa-Texto-Cliente" />
+        <input type="text" name="Nome" id="cliente" class="Caixa-Texto-Cliente" />
     </div>
     <div class="row">
         <div class="column">
             <h2>Telefone (opcional):</h2>
-            <input type="text" name="Telefone" class="Caixa-Texto-Telefone" style="margin: auto;" />
+            <input type="text" name="Telefone" id="telefone2" class="Caixa-Texto-Telefone" placeholder="(DDD)0000-0000"
+                style="margin: auto;" onkeypress="$(this).mask('(00)00000-0000')" />
         </div>
-        <div class="columnEstado">
+        <div class="columnCpfCnpj">
             <h2>CPF ou CNPJ(opicional):</h2>
-            <input type="text" name="CpfCnpj" class="Caixa-Texto-CPF-CNPJ" style=" padding-left: 420px;" />
+            <input type="text" name="CpfCnpj" id="CpfCnpj2" class="Caixa-Texto-CPF-CNPJ2"
+                onkeypress="$(this).mask((length <= 12) ? '000.000.000-00' : '00.000.000/0000-00')" />
             <sub>Somente os números</sub>
         </div>
     </div>
     <div>
         <h2>Obs.: (opicional)</h2>
-        <input type="text" name="Nome" class="Caixa-Texto-Observacao" />
+        <input type="text" name="Nome" id="obs" class="Caixa-Texto-Observacao" />
     </div>
     <div>
         <h2>Descrição do Serviço:</h2>
-        <textarea name="Serviço" id="" cols="30" rows="10"
+        <textarea name="Serviço" id="descricao" cols="30" rows="10"
             placeholder="Descreva o problema relatado ou o serviço que será realizado"
             class="Caixa-Texto-Descricao"></textarea>
     </div>
     <div>
         <h2>Serviço Executado:</h2>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Descreva o serviço que será realizado"
+        <textarea name="" id="servico" cols="30" rows="10" placeholder="Descreva o serviço que será realizado"
             class="Caixa-Texto-Servico"></textarea>
     </div>
     <div class="row">
         <div class="column">
             <h2>Data:</h2>
-            <input type="date" class="Caixa-Data">
+            <input type="date" id="data" class="Caixa-Data">
         </div>
 
         <div class="column">
             <h2>Hora:</h2>
-            <input type="time" class="Caixa-Hora">
+            <input type="time" id="hora" class="Caixa-Hora">
             <sub>Somente os números</sub>
         </div>
     </div>
     <br>
     <div>
-        <button type="submit" class="Botao-GerarOS"><i class="fa-solid fa-check" style=" color: rgb(243, 243, 243);"></i><b class="b"> Gerar
-                O.S</b></button>
+        <a href="index2.html">
+            <button type="submit" onsubmit="Formulario()" class="Botao-GerarOS">
+                <i class="fa-solid fa-check" style=" color: rgb(243, 243, 243);">
+                </i>
+                <b class="b"> GerarO.S</b>
+        </a>
     </div>
     <br>
-    
+
 </body>
 
 </html>
