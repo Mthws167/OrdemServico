@@ -1,0 +1,21 @@
+b {
+    font-size: xx-large;
+}
+
+
+h2 {
+    font-size: medium;
+}
+
+.box {
+    box-sizing: border-box;
+    margin: auto;
+    width: 800px;
+    height: 1580px;
+    padding-top: 20px;
+    padding-left: 8px;
+    border: solid rgba(0, 0, 0, 0.829);
+    border-radius: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
