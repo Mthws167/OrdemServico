@@ -64,6 +64,12 @@ sub{
     clear: both;
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap: 40px;
+}
+
 .Caixa-Texto-N-OS{
     width: 165px;
     height: 40px;
