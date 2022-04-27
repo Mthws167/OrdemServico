@@ -10,7 +10,7 @@
     <sub id="data"> </sub><sub id="hora"> </sub>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
@@ -20,7 +20,16 @@
 
 <body class="box">
     <form name="form2" id="form2" action="index.html" method="get">
-        <p id="nos1"></p>
+        <script>
+            //Pega o registro STORAGE no localstorage.
+            var registro = localStorage.getItem("storage");
+
+            var parse = JSON.parse(registro);
+            var obj = JSON.parse(parse);
+
+            console.log(obj.nos);
+            console.log(obj.nome); 
+        </script>
     </form>
 </body>
 
