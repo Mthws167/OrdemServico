@@ -55,5 +55,39 @@ function resultado() {
     if(nos.value != ""&&nome.value != ""&&endereco.value != ""&&numero.value != ""&&bairro.value != ""&&cidade.value != ""&&estado.value != ""&&cep.value != ""&&cpfcnpj.value != ""&&telefone.value != ""&&cliente.value != ""&&telefone2.value != ""&&cpfcnpj2.value != ""&&obs.value != ""&&descricao.value != ""&&servico.value != ""&&data.value != ""&&hora.value != ""){
         var nos1=parseInt(nos.value);
         document.getElementById("nos1").innerHTML = "Nº OS: "+nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Nome: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Endereco: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Numero: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Bairro: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Cidade: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Estado: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "CEP: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Telefone: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "CPF ou CNPJ: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Cliente: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Telefone: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "CPF ou CNPJ: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Obs: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Descricao: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Servico: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Data: " + nos;
+        var nos1 = parseInt(nos.value);
+        document.getElementById("nos1").innerHTML = "Hora: " + nos;
     }
 }
