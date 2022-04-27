@@ -1,10 +1,12 @@
 b {
     font-size: xx-large;
+    color: rgb(252, 244, 244);
 }
 
 
 h2 {
     font-size: medium;
+    color: rgb(252, 244, 244);
 }
 
 .box {
@@ -14,8 +16,9 @@ h2 {
     height: 1580px;
     padding-top: 20px;
     padding-left: 8px;
-    border: solid rgba(0, 0, 0, 0.829);
+    border: solid rgb(255, 255, 255);
     border-radius: 2%;
     font-family: Arial, Helvetica, sans-serif;
-
+    background-image: url("images/imagemFundo.jpg");
+    background-size: cover;
 }
