@@ -19,27 +19,27 @@ function resultado() {
     let data = document.getElementById("data").value;
     let hora = document.getElementById("hora").value;
 
-    if ( nos.value != "" && nome.value != "" && endereco.value != "" && numero.value != "" && bairro.value != "" && cidade.value != "" && estado.value != "" && cep.value != "" && cpfcnpj.value != "" && telefone.value != "" && cliente.value != "" && telefone2.value != "" && cpfcnpj2.value != "" && obs.value != "" && descricao.value != "" && servico.value != "" && data.value != "" && hora.value != "") {
+    if ( nos.value != ''  && nome.value != "" && endereco.value != "" && numero.value != "" && bairro.value != "" && cidade.value != "" && estado.value != "" && cep.value != "" && cpfcnpj.value != "" && telefone.value != "" && cliente.value != "" && telefone2.value != "" && cpfcnpj2.value != "" && obs.value != "" && descricao.value != "" && servico.value != "" && data.value != "" && hora.value != "") {
         document.getElementById('form2').style.display = "block";
 
-        document.getElementById("nos").innerHTML = "Nº OS: " + nos;
-        document.getElementById("nome").innerHTML = "Nome: " + nome;
-        document.getElementById("endereco").innerHTML = "Endereço: " + endereco;
-        document.getElementById("nmero").innerHTML = "Número: " + numero;
-        document.getElementById("bairro").innerHTML = "Bairro: " + bairro;
-        document.getElementById("cidade").innerHTML = "Cidade: " + cidade;
-        document.getElementById("estado").innerHTML = "Estado: " + estado;
-        document.getElementById("cep").innerHTML = "CEP: " + cep;
-        document.getElementById("telefone").innerHTML = "Telefone: " + telefone;
-        document.getElementById("cpfcnpj").innerHTML = "CPF/CNPJ: " + cpfcnpj;
-        document.getElementById("cliente").innerHTML = "Cliente: " + cliente;
-        document.getElementById("telefone2").innerHTML = "Telefone: " + telefone2;
-        document.getElementById("cpfcnpj2").innerHTML = "CPF/CNPJ: " + cpfcnpj2;
-        document.getElementById("obs").innerHTML = "Obs.: " + obs;
-        document.getElementById("descricao").innerHTML = "Descrição: " + descricao;
-        document.getElementById("servico").innerHTML = "Serviço: " + servico;
-        document.getElementById("data1").innerHTML = "Data: " + data;
-        document.getElementById("hora1").innerHTML = "Hora: " + hora;
+        document.getElementById("nos1").innerHTML = "Nº OS: " + nos;
+        document.getElementById("nome1").innerHTML = "Nome: " + nome;
+        document.getElementById("endereco1").innerHTML = "Endereço: " + endereco;
+        document.getElementById("nmero1").innerHTML = "Número: " + numero;
+        document.getElementById("bairro1").innerHTML = "Bairro: " + bairro;
+        document.getElementById("cidade1").innerHTML = "Cidade: " + cidade;
+        document.getElementById("estado1").innerHTML = "Estado: " + estado;
+        document.getElementById("cep1").innerHTML = "CEP: " + cep;
+        document.getElementById("telefone1").innerHTML = "Telefone: " + telefone;
+        document.getElementById("cpfcnpj1").innerHTML = "CPF/CNPJ: " + cpfcnpj;
+        document.getElementById("cliente1").innerHTML = "Cliente: " + cliente;
+        document.getElementById("telefone21").innerHTML = "Telefone: " + telefone2;
+        document.getElementById("cpfcnpj21").innerHTML = "CPF/CNPJ: " + cpfcnpj2;
+        document.getElementById("obs1").innerHTML = "Obs.: " + obs;
+        document.getElementById("descricao1").innerHTML = "Descrição: " + descricao;
+        document.getElementById("servico1").innerHTML = "Serviço: " + servico;
+        document.getElementById("data1").innerHTML = data;
+        document.getElementById("hora1").innerHTML = hora;
 
     }
 }
