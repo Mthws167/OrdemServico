@@ -20,8 +20,8 @@
 
 
 <body class="box">
-    <div class="cards"> 
-        <form name="form1" id="form1" >
+    <div class="cards" id="form1"> 
+        <form name="form1"  >
             <div>
                 <h2>Nº da O.S:</h2>
                 <input type="text" name="Nº O.S" id="nos" class="Caixa-Texto-N-OS" onkeypress='numeroOS();' required />
@@ -157,7 +157,7 @@
             <br>
             <div>
 
-                <button type="button" class="Botao-GerarOS" value="Resultado" onclick="resultado()">
+                <button type="submit" class="Botao-GerarOS" value="Resultado" onclick="resultado()">
                     <i class="fa-solid fa-check" style=" color: rgb(243, 243, 243);">
                     </i>
                     <b class="b"> GerarO.S</b>
@@ -168,6 +168,9 @@
            
         </form>
 
+    </div>
+    <div id="form2">
+        <sub id="data1"></sub><sub id="hora1"></sub>
     </div>
       <script type="text/javascript" src="script.js"></script>
 </body>
