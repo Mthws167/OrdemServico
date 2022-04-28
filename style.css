@@ -1,210 +1,91 @@
-b {
-    font-size: xx-large;
-    color: rgb(255, 255, 255);
+function esconderMostrar(){
+    var form2 = document.getElementById("form2").style.display;
+    if (form2=='none'){
+        document.getElementById("form2").style.display="block";
+    }else{
+        document.getElementById("form2").style.display = "none";
+    }
+}
+
+function resultado() {
+    document.getElementById('form1').style.display = "none";
+    
+    var nos1 = document.getElementById("nos").value;
+    var nome1 = document.getElementById("nome").value;
+    var endereco1 = document.getElementById("endereco").value;
+    var numero1 = document.getElementById("numero").value;
+    var bairro1 = document.getElementById("bairro").value;
+    var cidade1 = document.getElementById("cidade").value;
+    var estado1 = document.getElementById("estado").value;
+    var cep1 = document.getElementById("cep").value;
+    var telefone1 = document.getElementById("telefone").value;
+    var cpfcnpj1 = document.getElementById("CpfCnpj").value;
+    var cliente1 = document.getElementById("cliente").value;
+    var telefone21 = document.getElementById("telefone2").value;
+    var cpfcnpj21 = document.getElementById("CpfCnpj2").value;
+    var obs1 = document.getElementById("obs").value;
+    var descricao1 = document.getElementById("descricao").value;
+    var servico1 = document.getElementById("servico").value;
+    var data1 = document.getElementById("data").value;
+    var hora1 = document.getElementById("hora").value;
+
+    if (onclick.botao2 && nos1.value != ''  && nome1.value != "" && endereco1.value != "" && numero1.value != "" && bairro1.value != "" && cidade1.value != "" && estado1.value != "" && cep1.value != "" && cpfcnpj1.value != "" && telefone1.value != "" && cliente1.value != "" && telefone21.value != "" && cpfcnpj21.value != "" && obs1.value != "" && descricao1.value != "" && servico1.value != "" && data1.value != "" && hora1.value != "") {
+        document.getElementById('form2').style.display = "block";
+
+
+        document.getElementById("nos").innerHTML = "ORDEM DE SERVIÇO Nº: " + nos1;
+        document.getElementById("nome").innerHTML = nome1;
+        document.getElementById("enderecoNumeroBairro").innerHTML = endereco1 + "," + numero1 + "," + bairro1;
+        document.getElementById("cidadeEstadoCep").innerHTML = cidade1 + "" + estado1 + ", CEP:" + cep1;
+        document.getElementById("telefone").innerHTML = telefone1;
+        document.getElementById("cpfcnpj").innerHTML = "CPF/CNPJ: " + cpfcnpj1;
+        document.getElementById("cliente").innerHTML = "Cliente: " + cliente1;
+        document.getElementById("telefone2").innerHTML = "Telefone: " + telefone21;
+        document.getElementById("cpfcnpj2").innerHTML = "CPF/CNPJ: " + cpfcnpj21;
+        document.getElementById("obs").innerHTML = "OBS.: " + obs1;
+        document.getElementById("descricao").innerHTML = descricao1;
+        document.getElementById("servico").innerHTML = servico1;
+        document.getElementById("dataHora").innerHTML = data1 + '-' + hora1;
+
+    }
 }
 
 
-h2 {
-    font-size: medium;
-    color: rgb(0, 0, 0);
+function numeroOS(evt) {
+    var evento = evt || window.event;
+    var chave = evento.keyCode || evento.which;
+    chave = String.fromCharCode(chave);
+    var regex = /^[0-9.,]+$/;
+    var regex = /^[0-9.]+$/;
+    if (!regex.test(chave)) {
+        evento.returnValue = false;
+        if (evento.preventDefault) evento.preventDefault();
+    }
 }
 
-hr{
-    margin-right: 28px;
-    color: rgb(0, 0, 0);
-}
-p{
-    font-size: medium;
-    color: rgb(0, 0, 0);
-}
-
-.box {
-    box-sizing: border-box;
-    margin: auto;
-    width: 800px;
-    height: 1580px;
-    padding-top: 20px;
-    padding-left: 8px;
-    border: solid rgb(0, 0, 0);
-    border-radius: 2%;
-    font-family: Arial, Helvetica, sans-serif;
+function numeroCasa(evt) {
+    var evento = evt || window.event;
+    var chave = evento.keyCode || evento.which;
+    chave = String.fromCharCode(chave);
+    var regex = /^[0-9.,]+$/;
+    var regex = /^[0-9.]+$/;
+    if (!regex.test(chave)) {
+        evento.returnValue = false;
+        if (evento.preventDefault) evento.preventDefault();
+    }
 }
 
-.b{
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.column {
-    float: left;
-    width: 185px;
-}
+var CpfCnpjMask = function (val) {
+    return val.replace(/\D/g, '').length <= 11 ? '000.000.000-000' : '00.000.000/0000-00';
+},
+    cpfCnpjpOpcao = {
+        onKeyPress: function (val, e, field, options) {
+            field.mask(CpfCnpjMask.apply({}, arguments), options);
+        }
+    };
 
-.columnEstado {
-    float: left;
-    padding-left: 160px;
-    width: 230px;
-}
 
-.columnCEP {
-    float: left;
-    padding-left: 30px;
+function imprimir() {
+    window.print();
 }
-
-.columnCpfCnpj {
-    float: left;
-    padding-left: 180px;
-    width: 350px;
-}
-
-.cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-    gap: 40px;
-}
-
-.Caixa-Texto-N-OS{
-    width: 165px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-Numero-Casa{
-    width: 165px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-CEP{
-    width: 165px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-Bairro {
-    width: 585px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-Nome-Prestador {
-    width: 770px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-Endereco {
-    width: 770px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-Cliente {
-    width: 770px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-Cidade {
-    width: 320px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-Telefone {
-    width: 340px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-.Caixa-Texto-CPF-CNPJ1 {
-    width: 402px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-CPF-CNPJ2 {
-    width: 402px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-Estado {
-    width: 245px;
-    height: 48px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-Observacao {
-    width: 770px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Texto-Descricao {
-    width: 770px;
-    height: 100px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-.Caixa-Texto-Servico {
-    width: 770px;
-    height: 100px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Caixa-Data{
-    width: 165px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-.Caixa-Hora {
-    width: 165px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid rgb(0, 0, 0);
-    font-size: 17px;
-}
-
-.Botao-GerarOS{
-    width: 175px;
-    height: 60px;
-    border-radius: 5px;
-    font-size: 20px;
-    background-color: rgb(255, 255, 255);
-}
-
+document.getElementById('botao').style.display ="none";
