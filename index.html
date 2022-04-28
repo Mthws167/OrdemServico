@@ -4,16 +4,14 @@
 <title>Ordem de Serviço</title>
 
 <link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="index2.html">
 
 
 <head>
-    <b>Ordem de Serviço</b>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/5c632ebf55.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script.js"></script>
+  
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
@@ -22,9 +20,8 @@
 
 
 <body class="box">
-    <div class="cards">
-
-        <form name="form1" id="form1" action="index2.html" method="post">
+    <div class="cards"> 
+        <form name="form1" id="form1" >
             <div>
                 <h2>Nº da O.S:</h2>
                 <input type="text" name="Nº O.S" id="nos" class="Caixa-Texto-N-OS" onkeypress='numeroOS();' required />
@@ -160,16 +157,19 @@
             <br>
             <div>
 
-                <button type="submit" id="form1" onclick="resultado()" class="Botao-GerarOS">
+                <button type="button" class="Botao-GerarOS" value="Resultado" onclick="resultado()">
                     <i class="fa-solid fa-check" style=" color: rgb(243, 243, 243);">
                     </i>
                     <b class="b"> GerarO.S</b>
-
+                </button>
+                <p id="data1">Data: </p><p id="hora1">Hora: </p>
             </div>
             <br>
+           
         </form>
 
     </div>
+      <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
