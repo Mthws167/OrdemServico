@@ -131,13 +131,13 @@
             </div>
             <div>
                 <h2>Descrição do Serviço:</h2>
-                <textarea name="Serviço" id="descricao" cols="30" rows="10"
+                <textarea name="Descricao" id="descricao" cols="30" rows="10"
                     placeholder="Descreva o problema relatado ou o serviço que será realizado"
                     class="Caixa-Texto-Descricao" required></textarea>
             </div>
             <div>
                 <h2>Serviço Executado:</h2>
-                <textarea name="" id="servico" cols="30" rows="10" placeholder="Descreva o serviço que será realizado"
+                <textarea name="Servico" id="servico" cols="30" rows="10" placeholder="Descreva o serviço que será realizado"
                     class="Caixa-Texto-Servico" required></textarea>
             </div>
             <div class="row">
@@ -155,7 +155,7 @@
             <br>
             <div>
 
-                <button id=" botao" class="Botao-GerarOS" onclick="resultado()">
+                <button  class="Botao-GerarOS" onclick="resultado()">
                     <i class="fa-solid fa-check" style=" color: rgb(0, 0, 0);">
                     </i>
                     <b class="b"> GerarO.S</b>
@@ -174,26 +174,26 @@
         <br><br>
         <div style="border:solid 2px;">
             <p id="nomeServidor"></p>
-            <p id="cpfcnpj"></p>
+            <p id="cpfcnpjs"></p>
             <p id="enderecoNumeroBairro"></p>
-            <p id="telefone"></p>
+            <p id="telefones"></p>
         </div>
-        <div style="text-align: center;" id="nos1"></div>
+        <div style="text-align: center;" id="nosOS"></div>
         <div>
-            <p id="cliente"></p>
-            <p id="cpfcnpj2"></p>
-            <p id="telefone2"></p>
+            <p id="clientes"></p>
+            <p id="cpfcnpsj2"></p>
+            <p id="telefones2"></p>
             <br>
-            <p id="obs"></p>
+            <p id="obss"></p>
         </div>
         <div style="border:solid 2px;">
             DESCRIÇÃO DO SERVIÇO/DEFEITO RELATADO:
-            <p id="descricao"></p>
+            <p id="descricaos"></p>
         </div>
         <br>
         <div style="border: solid 2px;">
             SERVIÇO ESXECUTADO:
-            <p id="servico"></p>
+            <p id="servicos"></p>
         </div>
         <br>
         <br>
@@ -209,12 +209,13 @@
         </div>
         <br><br><br><br>
         <div style="padding-left: 280px;">
-            <button type="submit" id="botao2" class="Botao-GerarOS" value="Resultado" onclick="imprimir()">
+            <button class="Botao-GerarOS"  onclick="imprimir()">
                 <i class="fa-solid fa-file" style=" color: rgb(0, 0, 0);">
                 </i>
                 <b class="b"> Imprimir</b>
             </button>
         </div>
+        <br><br><br>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
