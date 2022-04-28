@@ -16,6 +16,7 @@ var descricao1 = "";
 var servico1 = "";
 var data1 = "";
 var hora1 = "";
+var resultado="";
 
 function resultado() {
     resultado = document.getElementById('form1').style.display = "none";
