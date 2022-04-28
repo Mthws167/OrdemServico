@@ -22,7 +22,7 @@ p{
     box-sizing: border-box;
     margin: auto;
     width: 800px;
-    height: 1580px;
+    height: auto;
     padding-left: 8px;
     border: solid rgb(79, 79, 79);
     font-family: Arial, Helvetica, sans-serif;
