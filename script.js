@@ -29,7 +29,7 @@ function resultado() {
     var data1 = document.getElementById("data").value;
     var hora1 = document.getElementById("hora").value;
 
-    if (onclick.botao2 && nos1.value != ''  && nome1.value != "" && endereco1.value != "" && numero1.value != "" && bairro1.value != "" && cidade1.value != "" && estado1.value != "" && cep1.value != "" && cpfcnpj1.value != "" && telefone1.value != "" && cliente1.value != "" && telefone21.value != "" && cpfcnpj21.value != "" && obs1.value != "" && descricao1.value != "" && servico1.value != "" && data1.value != "" && hora1.value != "") {
+    if ( nos1.value != ''  && nome1.value != "" && endereco1.value != "" && numero1.value != "" && bairro1.value != "" && cidade1.value != "" && estado1.value != "" && cep1.value != "" && cpfcnpj1.value != "" && telefone1.value != "" && cliente1.value != "" && telefone21.value != "" && cpfcnpj21.value != "" && obs1.value != "" && descricao1.value != "" && servico1.value != "" && data1.value != "" && hora1.value != "") {
         document.getElementById('form2').style.display = "block";
 
 
