@@ -19,7 +19,7 @@
 
 <body class="box">
     <div class="cards" id="form1">
-        <form >
+        <form>
             <div>
                 <h2>Nº da O.S:</h2>
                 <input type="text" name="Nº O.S" id="nos" class="Caixa-Texto-N-OS" onkeypress='numeroOS();' required />
@@ -143,19 +143,19 @@
             <div class="row">
                 <div class="column">
                     <h2>Data:</h2>
-                    <input type="date" id="data" class="Caixa-Data" required>
+                    <input type="text" id="data" class="Caixa-Data" onkeypress="$(this).mask('00/00/0000') " required>
                 </div>
 
                 <div class="column">
                     <h2>Hora:</h2>
-                    <input type="time" id="hora" class="Caixa-Hora" required>
+                    <input type="text" id="hora" class="Caixa-Hora" onkeypress="$(this).mask('00:00')" required>
                     <sub>Somente os números</sub>
                 </div>
             </div>
             <br>
             <div>
 
-                <button id=" botao"class="Botao-GerarOS"onclick="resultado()">
+                <button id=" botao" class="Botao-GerarOS" onclick="resultado()">
                     <i class="fa-solid fa-check" style=" color: rgb(0, 0, 0);">
                     </i>
                     <b class="b"> GerarO.S</b>
@@ -165,55 +165,59 @@
 
         </form>
     </div>
-   
+
     <div id="form2">
-            <br><br>
-            <div style="border:solid 2px;">
-                <p id="nome"></p>
-                <p id="cpfcnpj"></p>
-                <p id="enderecoNumeroBairro"></p>
-                <p id="telefone"></p>
-            </div>
-            <div style="text-align: center;" id="nos1"></div>
-            <div>
-                <p id="cliente"></p>
-                <p id="cpfcnpj2"></p>
-                <p id="telefone2"></p>
-                <br>
-                <p id="obs"></p>
-            </div>
-            <div style="border:solid 2px;">
-                DESCRIÇÃO DO SERVIÇO/DEFEITO RELATADO:
-                <p id="descricao"></p>
-            </div>
+        <div>
+            <p id="dataHora"></p>
+        </div>
+
+        <br><br>
+        <div style="border:solid 2px;">
+            <p id="nomeServidor"></p>
+            <p id="cpfcnpj"></p>
+            <p id="enderecoNumeroBairro"></p>
+            <p id="telefone"></p>
+        </div>
+        <div style="text-align: center;" id="nos1"></div>
+        <div>
+            <p id="cliente"></p>
+            <p id="cpfcnpj2"></p>
+            <p id="telefone2"></p>
             <br>
-            <div style="border: solid 2px;">
-                SERVIÇO ESXECUTADO:
-                <p id="servico"></p>
+            <p id="obs"></p>
+        </div>
+        <div style="border:solid 2px;">
+            DESCRIÇÃO DO SERVIÇO/DEFEITO RELATADO:
+            <p id="descricao"></p>
+        </div>
+        <br>
+        <div style="border: solid 2px;">
+            SERVIÇO ESXECUTADO:
+            <p id="servico"></p>
+        </div>
+        <br>
+        <br>
+        <div class="row" style="padding-left: 170px;">
+            <div class="column">
+                <hr>
+                <p>Assinatura do Cliente</p>
             </div>
-            <br>
-            <br>
-            <div class="row" style="padding-left: 200px;" >
-                <div class="column">
-                    <hr>
-                    <p>Assinatura do CLiente</p>
-                </div>
-                <div class="column">
-                    <hr>
-                    <p>Técnico Responsável</p>
-                </div>
+            <div class="column" style="padding-left: 50px;">
+                <hr>
+                <p>Técnico Responsável</p>
             </div>
-            <br><br><br><br>
-            <div  style="padding-left: 280px;">
-                <button type="submit"id="botao2" class="Botao-GerarOS" value="Resultado" onclick="imprimir()">
-                    <i class="fa-solid fa-file" style=" color: rgb(0, 0, 0);">
-                    </i>
-                    <b class="b"> Imprimir</b>
-                </button>
-            </div>
+        </div>
+        <br><br><br><br>
+        <div style="padding-left: 280px;">
+            <button type="submit" id="botao2" class="Botao-GerarOS" value="Resultado" onclick="imprimir()">
+                <i class="fa-solid fa-file" style=" color: rgb(0, 0, 0);">
+                </i>
+                <b class="b"> Imprimir</b>
+            </button>
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
+
 
 </html>
