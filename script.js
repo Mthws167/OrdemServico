@@ -19,7 +19,6 @@ var hora1 = "";
 
 function resultado() {
     resultado = document.getElementById('form1').style.display = "none";
-    document.getElementById('form2').style.display = "block";
 
     var nos1 = document.getElementById("nos").value;
     var nome1 = document.getElementById("nome").value;
@@ -40,9 +39,8 @@ function resultado() {
     var data1 = document.getElementById("data").value;
     var hora1 = document.getElementById("hora").value;
 
-    if (nos1.value != '' && nome1.value != "" && endereco1.value != "" && numero1.value != "" && bairro1.value != "" && cidade1.value != "" && estado1.value != "" && cep1.value != "" && cpfcnpj1.value != "" && telefone1.value != "" && cliente1.value != "" && telefone21.value != "" && cpfcnpj21.value != "" && obs1.value != "" && descricao1.value != "" && servico1.value != "" && data1.value != "" && hora1.value != "") {
-        document.getElementById('form2').style.display = "none";
-        document.getElementById('form1').style.display = "block";
+    
+        document.getElementById('form2').style.display = "block";
 
         document.getElementById("nosOS").innerHTML = "ORDEM DE SERVIÇO Nº: " + nos1;
         document.getElementById("nomeServidor").innerHTML = nome1;
@@ -58,7 +56,7 @@ function resultado() {
         document.getElementById("servicos").innerHTML = servico1;
         document.getElementById("dataHora").innerHTML = data1 + '-' + hora1;
 
-    }
+    
 }
 
 
