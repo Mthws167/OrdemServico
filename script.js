@@ -1,4 +1,5 @@
 function resultado() {
+    document.getElementById('form1').style.display = "none";
     let nos = document.getElementById("nos").value;
     let nome = document.getElementById("nome").value;
     let endereco = document.getElementById("endereco").value;
@@ -18,7 +19,9 @@ function resultado() {
     let data = document.getElementById("data").value;
     let hora = document.getElementById("hora").value;
 
-    if (nos.value != "" && nome.value != "" && endereco.value != "" && numero.value != "" && bairro.value != "" && cidade.value != "" && estado.value != "" && cep.value != "" && cpfcnpj.value != "" && telefone.value != "" && cliente.value != "" && telefone2.value != "" && cpfcnpj2.value != "" && obs.value != "" && descricao.value != "" && servico.value != "" && data.value != "" && hora.value != "") {
+    if ( nos.value != "" && nome.value != "" && endereco.value != "" && numero.value != "" && bairro.value != "" && cidade.value != "" && estado.value != "" && cep.value != "" && cpfcnpj.value != "" && telefone.value != "" && cliente.value != "" && telefone2.value != "" && cpfcnpj2.value != "" && obs.value != "" && descricao.value != "" && servico.value != "" && data.value != "" && hora.value != "") {
+        document.getElementById('form2').style.display = "block";
+
         document.getElementById("nos").innerHTML = "Nº OS: " + nos;
         document.getElementById("nome").innerHTML = "Nome: " + nome;
         document.getElementById("endereco").innerHTML = "Endereço: " + endereco;
@@ -38,10 +41,6 @@ function resultado() {
         document.getElementById("data1").innerHTML = "Data: " + data;
         document.getElementById("hora1").innerHTML = "Hora: " + hora;
 
-    }else {
-        var nulo = "Informe os valores!";
-        alert("ERRO!");
-        alert(nulo);
     }
 }
 
@@ -71,7 +70,7 @@ function numeroCasa(evt) {
 }
 
 var CpfCnpjMask = function (val) {
-    return val.replace(/\D/g, '').length <= 11 ? '000.000.000-009' : '00.000.000/0000-00';
+    return val.replace(/\D/g, '').length <= 11 ? '000.000.000-000' : '00.000.000/0000-00';
 },
     cpfCnpjpOpcao = {
         onKeyPress: function (val, e, field, options) {
