@@ -30,9 +30,6 @@ button{
     border: solid rgb(79, 79, 79);
     border-radius: 2%;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(/fundo.jpeg);
-    background-position: center center;
-    background-size: cover;
 }
 
 .b{
