@@ -25,6 +25,7 @@ p{
     height: auto;
     padding-left: 8px;
     border: solid rgb(79, 79, 79);
+    border-radius: 2%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -69,6 +70,7 @@ p{
     width: 165px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -76,6 +78,7 @@ p{
     width: 165px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -83,6 +86,7 @@ p{
     width: 165px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -90,6 +94,7 @@ p{
     width: 585px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -97,6 +102,7 @@ p{
     width: 770px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -104,6 +110,7 @@ p{
     width: 770px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -111,6 +118,7 @@ p{
     width: 770px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -118,6 +126,7 @@ p{
     width: 320px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -125,12 +134,14 @@ p{
     width: 340px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 .Caixa-Texto-CPF-CNPJ1 {
     width: 402px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -138,6 +149,7 @@ p{
     width: 402px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -145,6 +157,7 @@ p{
     width: 245px;
     height: 48px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -152,6 +165,7 @@ p{
     width: 770px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -159,12 +173,14 @@ p{
     width: 770px;
     height: 100px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 .Caixa-Texto-Servico {
     width: 770px;
     height: 100px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
@@ -172,19 +188,23 @@ p{
     width: 165px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 .Caixa-Hora {
     width: 165px;
     height: 40px;
     border: solid rgb(79, 79, 79);
+    border-radius: 4%;
     font-size: 17px;
 }
 
+@media print{
 .Botao-GerarOS{
     width: 175px;
     height: 60px;
     font-size: 20px;
     background-color: rgb(255, 255, 255);
+    display: none;
 }
-
+}
