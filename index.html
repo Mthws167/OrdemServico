@@ -17,9 +17,9 @@
 </head>
 
 
-<body class="box">
+<body class="box"onsubmit="return false">
     <div class="cards" id="form1">
-        <form >
+        <form  >
             <div>
                 <h2>Nº da O.S:</h2>
                 <input type="text" name="Nº O.S" id="nos" class="Caixa-Texto-N-OS" onkeypress='numeroOS();' required />
@@ -165,7 +165,7 @@
         </form>
     </div>
 
-    <div id="form2">
+    <div id="form2" style="padding-right: 10px;">
         <div>
             <p id="dataHora"></p>
         </div>
@@ -199,6 +199,7 @@
         </div>
         <br>
         <br>
+        <br><br><br>
         <div class="row" style="padding-left: 170px;">
             <div class="column">
                 <hr>
@@ -210,7 +211,7 @@
             </div>
         </div>
         <br><br><br><br>
-        <div style="padding-left: 280px;">
+        <div style="padding-left: 310px;">
         
             <button  class="Botao-GerarOS" onclick="imprimir()">
                 <i class="fa-solid fa-file" style=" color: rgb(0, 0, 0);">
