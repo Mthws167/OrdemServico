@@ -6,7 +6,7 @@ Formulário de Ordem de Serviço, desenvolvido como trabalho da matéria de Prog
 <hr>
 <h1>Tecnologias:</h1>
 <ul>
-  <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+  <li><a href="https://code.visualstudio.com/"><b>Visual Studio Code</b></a></li>
   <li><b>HTML 5</b></li>
   <li><b>CSS 3</b></li>
   <li><b>Github Pages</b></li>
