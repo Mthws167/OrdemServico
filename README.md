@@ -13,4 +13,4 @@ Formulário de Ordem de Serviço, desenvolvido como trabalho da matéria de Prog
 </ul>
 <hr>
 <br>
-Desenvolvido por Matheus Henrique de Oliveira.
+Desenvolvido por <b>Matheus Henrique de Oliveira</b>.
