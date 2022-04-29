@@ -1,26 +1,26 @@
 document.getElementById('form2').style.display = "none"
 
 function resultado() {
-    resultado = document.getElementById('form1').style.display = "none";
+    document.getElementById('form1').style.display = "none";
 
-    var nos1 = document.getElementById("nos").value;
-    var nome1 = document.getElementById("nome").value;
-    var endereco1 = document.getElementById("endereco").value;
-    var numero1 = document.getElementById("numero").value;
-    var bairro1 = document.getElementById("bairro").value;
-    var cidade1 = document.getElementById("cidade").value;
-    var estado1 = document.getElementById("estado").value;
-    var cep1 = document.getElementById("cep").value;
-    var telefone1 = document.getElementById("telefone").value;
-    var cpfcnpj1 = document.getElementById("CpfCnpj").value;
-    var cliente1 = document.getElementById("cliente").value;
-    var telefone21 = document.getElementById("telefone2").value;
-    var cpfcnpj21 = document.getElementById("CpfCnpj2").value;
-    var obs1 = document.getElementById("obs").value;
-    var descricao1 = document.getElementById("descricao").value;
-    var servico1 = document.getElementById("servico").value;
-    var data1 = document.getElementById("data").value;
-    var hora1 = document.getElementById("hora").value;
+    let nos1 = document.getElementById("nos").value;
+    let nome1 = document.getElementById("nome").value;
+    let endereco1 = document.getElementById("endereco").value;
+    let numero1 = document.getElementById("numero").value;
+    let bairro1 = document.getElementById("bairro").value;
+    let cidade1 = document.getElementById("cidade").value;
+    let estado1 = document.getElementById("estado").value;
+    let cep1 = document.getElementById("cep").value;
+    let telefone1 = document.getElementById("telefone").value;
+    let cpfcnpj1 = document.getElementById("CpfCnpj").value;
+    let cliente1 = document.getElementById("cliente").value;
+    let telefone21 = document.getElementById("telefone2").value;
+    let cpfcnpj21 = document.getElementById("CpfCnpj2").value;
+    let obs1 = document.getElementById("obs").value;
+    let descricao1 = document.getElementById("descricao").value;
+    let servico1 = document.getElementById("servico").value;
+    let data1 = document.getElementById("data").value;
+    let hora1 = document.getElementById("hora").value;
 
 
     document.getElementById('form2').style.display = "block";
@@ -28,7 +28,7 @@ function resultado() {
     document.getElementById("nosOS").innerHTML = "ORDEM DE SERVIÇO Nº: " + nos1;
     document.getElementById("nomeServidor").innerHTML = nome1;
     document.getElementById("enderecoNumeroBairro").innerHTML = endereco1 + "," + numero1 + "," + bairro1;
-    document.getElementById("cidadeEstadoCep").innerHTML = cidade1 + "" + estado1 + ", CEP:" + cep1;
+    document.getElementById("cidadeEstadoCep").innerHTML = cidade1 + "," + estado1 + ", CEP:" + cep1;
     document.getElementById("telefones").innerHTML = telefone1;
     document.getElementById("cpfcnpjs").innerHTML = "CPF/CNPJ: " + cpfcnpj1;
     document.getElementById("clientes").innerHTML = "Cliente: " + cliente1;
