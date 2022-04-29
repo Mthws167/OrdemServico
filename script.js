@@ -1,22 +1,4 @@
-var nos1 = "";
-var nome1 = "";
-var endereco1 = "";
-var numero1 = "";
-var bairro1 = "";
-var cidade1 = "";
-var estado1 = "";
-var cep1 = "";
-var telefone1 = "";
-var cpfcnpj1 = "";
-var cliente1 = "";
-var telefone21 = "";
-var cpfcnpj21 = "";
-var obs1 = "";
-var descricao1 = "";
-var servico1 = "";
-var data1 = "";
-var hora1 = "";
-var resultado="";
+document.getElementById('form2').style.display = "none"
 
 function resultado() {
     resultado = document.getElementById('form1').style.display = "none";
@@ -40,36 +22,26 @@ function resultado() {
     var data1 = document.getElementById("data").value;
     var hora1 = document.getElementById("hora").value;
 
-    
-        document.getElementById('form2').style.display = "block";
 
-        document.getElementById("nosOS").innerHTML = "ORDEM DE SERVIÇO Nº: " + nos1;
-        document.getElementById("nomeServidor").innerHTML = nome1;
-        document.getElementById("enderecoNumeroBairro").innerHTML = endereco1 + "," + numero1 + "," + bairro1;
-        document.getElementById("cidadeEstadoCep").innerHTML = cidade1 + "" + estado1 + ", CEP:" + cep1;
-        document.getElementById("telefones").innerHTML = telefone1;
-        document.getElementById("cpfcnpjs").innerHTML = "CPF/CNPJ: " + cpfcnpj1;
-        document.getElementById("clientes").innerHTML = "Cliente: " + cliente1;
-        document.getElementById("telefones2").innerHTML = "Telefone: " + telefone21;
-        document.getElementById("cpfcnpjs2").innerHTML = "CPF/CNPJ: " + cpfcnpj21;
-        document.getElementById("obss").innerHTML = "OBS.: " + obs1;
-        document.getElementById("descricaos").innerHTML = descricao1;
-        document.getElementById("servicos").innerHTML = servico1;
-        document.getElementById("dataHora").innerHTML = data1 + '-' + hora1;
+    document.getElementById('form2').style.display = "block";
 
-    
+    document.getElementById("nosOS").innerHTML = "ORDEM DE SERVIÇO Nº: " + nos1;
+    document.getElementById("nomeServidor").innerHTML = nome1;
+    document.getElementById("enderecoNumeroBairro").innerHTML = endereco1 + "," + numero1 + "," + bairro1;
+    document.getElementById("cidadeEstadoCep").innerHTML = cidade1 + "" + estado1 + ", CEP:" + cep1;
+    document.getElementById("telefones").innerHTML = telefone1;
+    document.getElementById("cpfcnpjs").innerHTML = "CPF/CNPJ: " + cpfcnpj1;
+    document.getElementById("clientes").innerHTML = "Cliente: " + cliente1;
+    document.getElementById("telefones2").innerHTML = "Telefone: " + telefone21;
+    document.getElementById("cpfcnpjs2").innerHTML = "CPF/CNPJ: " + cpfcnpj21;
+    document.getElementById("obss").innerHTML = "OBS.: " + obs1;
+    document.getElementById("descricaos").innerHTML = descricao1;
+    document.getElementById("servicos").innerHTML = servico1;
+    document.getElementById("dataHora").innerHTML = data1 + '-' + hora1;
+
+
 }
 
-
-function mostrar(){
-    var forms = document.getElementById("form1").style.display;
-    if (forms=='none'){
-        document.getElementById("form2").style.display="block";
-    }else{
-        document.getElementById("form2").style.display = "none";
-        document.getElementById("form1").style.display="block";
-    }
-}
 
 function numeroOS(evt) {
     var evento = evt || window.event;
@@ -108,4 +80,3 @@ var CpfCnpjMask = function (val) {
 function imprimir() {
     window.print();
 }
-document.getElementById('botao').style.display = "none";
