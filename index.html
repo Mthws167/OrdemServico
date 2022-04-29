@@ -19,7 +19,7 @@
 
 <body class="box">
     <div class="cards" id="form1">
-        <form action="/script.js">
+        <form >
             <div>
                 <h2>Nº da O.S:</h2>
                 <input type="text" name="Nº O.S" id="nos" class="Caixa-Texto-N-OS" onkeypress='numeroOS();' required />
@@ -154,7 +154,6 @@
             </div>
             <br>
             <div>
-
                 <button class="Botao-GerarOS" onclick="resultado()" >
                     <i class="fa-solid fa-check" style=" color: rgb(0, 0, 0);">
                     </i>
@@ -166,7 +165,7 @@
         </form>
     </div>
 
-    <div style="display: none;" id="form2">
+    <div id="form2">
         <div>
             <p id="dataHora"></p>
         </div>
@@ -175,6 +174,7 @@
         <div style="border:solid 2px;">
             <p id="nomeServidor"></p>
             <p id="cpfcnpjs"></p>
+            <p id="cidadeEstadoCep"></p>
             <p id="enderecoNumeroBairro"></p>
             <p id="telefones"></p>
         </div>
@@ -183,7 +183,7 @@
         <div style="text-align: center;" id="nosOS"></div>
         <div>
             <p id="clientes"></p>
-            <p id="cpfcnpsj2"></p>
+            <p id="cpfcnpjs2"></p>
             <p id="telefones2"></p>
             <br>
             <p id="obss"></p>
@@ -211,7 +211,8 @@
         </div>
         <br><br><br><br>
         <div style="padding-left: 280px;">
-            <button id="botao" class="Botao-GerarOS"  onclick="imprimir()">
+        
+            <button  class="Botao-GerarOS"  onclick="imprimir()">
                 <i class="fa-solid fa-file" style=" color: rgb(0, 0, 0);">
                 </i>
                 <b class="b"> Imprimir</b>
@@ -219,7 +220,7 @@
         </div>
         <br><br><br>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 
