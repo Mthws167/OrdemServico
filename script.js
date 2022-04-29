@@ -1,4 +1,6 @@
+
 document.getElementById('form2').style.display = "none"
+
 
 function resultado() {
     document.getElementById('form1').style.display = "none";
