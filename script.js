@@ -44,6 +44,10 @@ function resultado() {
 
 }
 
+function retorna(){
+    document.getElementById('form1').style.display = 'block';
+    document.getElementById('form2').style.display = 'none';
+}
 
 function numeroOS(evt) {
     var evento = evt || window.event;
