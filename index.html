@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -20,15 +21,14 @@
 <body class="box"onsubmit="return false">
     <div class="cards" id="form1">
         <form  onsubmit="resultado()" method="post">
+        <b>Ordem de Serviço</b>
             <div>
                 <h2>Nº da O.S:</h2>
                 <input type="text" name="nos" id="nos" class="Caixa-Texto-N-OS" onkeypress='numeroOS()' required="required"/>
-                <span class="erro"></span>
             </div>
             <div>
                 <h2>Nome do Prestador de Serviço:</h2>
                 <input type="text" name="nome" id="nome" class="Caixa-Texto-Nome-Prestador"  required />
-                <?php echo $erroNome; ?>
             </div>
             <div>
                 <h2>Endereço:</h2>
